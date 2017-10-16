@@ -49,9 +49,17 @@ class SignUpViewController: UIViewController, StoreSubscriber {
     
     
     
-    func newState(state: State) {
-        print("SignUp New State")
-        print("User:\(state.signUpState.userName))")
-        print("Pass:\(state.signUpState.password)")
+    func newState(state: State) {        
+        let signUpState = state.signUpState
+        
+        userNameTextField.backgroundColor =
+            state.signUpState.isUserNameValid || signUpState.userName.characters.count == 0 ?
+            .white : .orange
+        
+        passwordTextField.backgroundColor =
+            signUpState.isPasswordValid || signUpState.password.characters.count == 0 ?
+            .white : .orange
+        
+        registerButton.isEnabled = state.signUpState.isAllValid
     }
 }

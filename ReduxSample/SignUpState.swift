@@ -11,4 +11,11 @@ import Foundation
 struct SignUpState {
     var userName: String = ""
     var password: String = ""
+    
+    var isUserNameValid: Bool = false
+    var isPasswordValid: Bool = false
+    
+    var isAllValid: Bool {
+        return isUserNameValid && isPasswordValid
+    }
 }

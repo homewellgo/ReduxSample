@@ -15,10 +15,12 @@ func singUpReducer(action: Action, state: SignUpState?) -> SignUpState {
     switch action {
     case let action as SignUpActionSetUserNameText:
         state.userName = action.text
+        state.isUserNameValid = action.text.characters.count >= 5 ? true : false
         
     case let action as SignUpActionSetPasswordText:
         state.password = action.text
-        
+        state.isPasswordValid = action.text.characters.count >= 5 ? true : false
+
     default:
         break
     }
