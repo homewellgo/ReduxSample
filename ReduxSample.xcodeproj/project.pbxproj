@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5FED17B81F94EBBE0039FC80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED17B71F94EBBE0039FC80 /* AppDelegate.swift */; };
-		5FED17BA1F94EBBE0039FC80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED17B91F94EBBE0039FC80 /* ViewController.swift */; };
 		5FED17BD1F94EBBE0039FC80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FED17BB1F94EBBE0039FC80 /* Main.storyboard */; };
 		5FED17BF1F94EBBE0039FC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FED17BE1F94EBBE0039FC80 /* Assets.xcassets */; };
 		5FED17C21F94EBBE0039FC80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FED17C01F94EBBE0039FC80 /* LaunchScreen.storyboard */; };
@@ -39,7 +38,6 @@
 /* Begin PBXFileReference section */
 		5FED17B41F94EBBE0039FC80 /* ReduxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FED17B71F94EBBE0039FC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5FED17B91F94EBBE0039FC80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5FED17BC1F94EBBE0039FC80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FED17BE1F94EBBE0039FC80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FED17C11F94EBBE0039FC80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,12 +105,11 @@
 		5FED17B61F94EBBE0039FC80 /* ReduxSample */ = {
 			isa = PBXGroup;
 			children = (
-				5FED17B71F94EBBE0039FC80 /* AppDelegate.swift */,
-				5FED17B91F94EBBE0039FC80 /* ViewController.swift */,
-				5FED17BB1F94EBBE0039FC80 /* Main.storyboard */,
-				5FED17BE1F94EBBE0039FC80 /* Assets.xcassets */,
-				5FED17C01F94EBBE0039FC80 /* LaunchScreen.storyboard */,
-				5FED17C31F94EBBE0039FC80 /* Info.plist */,
+				5FED17F51F94EF4A0039FC80 /* Application */,
+				5FED17F61F94EF660039FC80 /* ViewController */,
+				5FED17F81F94EF780039FC80 /* Reducer */,
+				5FED17F91F94EF7D0039FC80 /* Action */,
+				5FED17F71F94EF730039FC80 /* State */,
 			);
 			path = ReduxSample;
 			sourceTree = "<group>";
@@ -143,6 +140,46 @@
 				5FED17E81F94ECFB0039FC80 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FED17F51F94EF4A0039FC80 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5FED17B71F94EBBE0039FC80 /* AppDelegate.swift */,
+				5FED17BB1F94EBBE0039FC80 /* Main.storyboard */,
+				5FED17BE1F94EBBE0039FC80 /* Assets.xcassets */,
+				5FED17C01F94EBBE0039FC80 /* LaunchScreen.storyboard */,
+				5FED17C31F94EBBE0039FC80 /* Info.plist */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		5FED17F61F94EF660039FC80 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		5FED17F71F94EF730039FC80 /* State */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		5FED17F81F94EF780039FC80 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Reducer;
+			sourceTree = "<group>";
+		};
+		5FED17F91F94EF7D0039FC80 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Action;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,7 +340,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FED17BA1F94EBBE0039FC80 /* ViewController.swift in Sources */,
 				5FED17B81F94EBBE0039FC80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
