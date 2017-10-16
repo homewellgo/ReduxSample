@@ -8,6 +8,8 @@
 
 import UIKit
 import ReSwift
+import RxSwift
+import RxCocoa
 
 class SignUpViewController: UIViewController, StoreSubscriber {
 
@@ -15,6 +17,13 @@ class SignUpViewController: UIViewController, StoreSubscriber {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var registerButton: UIButton!
     
+    
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        bind()
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -26,7 +35,23 @@ class SignUpViewController: UIViewController, StoreSubscriber {
         mainStore.unsubscribe(self)
     }
 
+    func bind() {
+        _ = userNameTextField.rx.text.subscribe(onNext: { text in
+            mainStore.dispatch( SignUpActionSetUserNameText(text: text ?? "") )
+        })
+        
+        _ = passwordTextField.rx.text.subscribe(onNext: { text in
+            mainStore.dispatch( SignUpActionSetPasswordText(text: text ?? "") )
+        })
+    }
+    
+    
+    
+    
+    
     func newState(state: State) {
-
+        print("SignUp New State")
+        print("User:\(state.signUpState.userName))")
+        print("Pass:\(state.signUpState.password)")
     }
 }

@@ -21,6 +21,7 @@
 		5FED18101F94F78F0039FC80 /* SignUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED180F1F94F78F0039FC80 /* SignUpState.swift */; };
 		5FED18121F94F8110039FC80 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED18111F94F8110039FC80 /* AppReducer.swift */; };
 		5FED18141F94F83F0039FC80 /* SignUpReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED18131F94F83F0039FC80 /* SignUpReducer.swift */; };
+		5FED18161F94FB280039FC80 /* SignUpActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED18151F94FB280039FC80 /* SignUpActions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		5FED180F1F94F78F0039FC80 /* SignUpState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpState.swift; sourceTree = "<group>"; };
 		5FED18111F94F8110039FC80 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		5FED18131F94F83F0039FC80 /* SignUpReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpReducer.swift; sourceTree = "<group>"; };
+		5FED18151F94FB280039FC80 /* SignUpActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpActions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 		5FED17F91F94EF7D0039FC80 /* Action */ = {
 			isa = PBXGroup;
 			children = (
+				5FED18151F94FB280039FC80 /* SignUpActions.swift */,
 			);
 			name = Action;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FED180C1F94F54E0039FC80 /* SignUpViewController.swift in Sources */,
+				5FED18161F94FB280039FC80 /* SignUpActions.swift in Sources */,
 				5FED17B81F94EBBE0039FC80 /* AppDelegate.swift in Sources */,
 				5FED18141F94F83F0039FC80 /* SignUpReducer.swift in Sources */,
 				5FED180E1F94F6A00039FC80 /* State.swift in Sources */,

@@ -12,5 +12,16 @@ import ReSwift
 func singUpReducer(action: Action, state: SignUpState?) -> SignUpState {
     var state = state ?? SignUpState()
     
+    switch action {
+    case let action as SignUpActionSetUserNameText:
+        state.userName = action.text
+        
+    case let action as SignUpActionSetPasswordText:
+        state.password = action.text
+        
+    default:
+        break
+    }
+    
     return state
 }
