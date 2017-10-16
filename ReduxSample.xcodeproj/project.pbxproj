@@ -16,6 +16,7 @@
 		5FED17E91F94ECFB0039FC80 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FED17E61F94ECFB0039FC80 /* ReSwift.framework */; };
 		5FED17EA1F94ECFB0039FC80 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FED17E71F94ECFB0039FC80 /* RxCocoa.framework */; };
 		5FED17EB1F94ECFB0039FC80 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FED17E81F94ECFB0039FC80 /* RxSwift.framework */; };
+		5FED180C1F94F54E0039FC80 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED180B1F94F54E0039FC80 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5FED17E61F94ECFB0039FC80 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		5FED17E71F94ECFB0039FC80 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		5FED17E81F94ECFB0039FC80 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		5FED180B1F94F54E0039FC80 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		5FED17F61F94EF660039FC80 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5FED180B1F94F54E0039FC80 /* SignUpViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FED180C1F94F54E0039FC80 /* SignUpViewController.swift in Sources */,
 				5FED17B81F94EBBE0039FC80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
