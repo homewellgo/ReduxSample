@@ -17,6 +17,10 @@
 		5FED17EA1F94ECFB0039FC80 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FED17E71F94ECFB0039FC80 /* RxCocoa.framework */; };
 		5FED17EB1F94ECFB0039FC80 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FED17E81F94ECFB0039FC80 /* RxSwift.framework */; };
 		5FED180C1F94F54E0039FC80 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED180B1F94F54E0039FC80 /* SignUpViewController.swift */; };
+		5FED180E1F94F6A00039FC80 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED180D1F94F6A00039FC80 /* State.swift */; };
+		5FED18101F94F78F0039FC80 /* SignUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED180F1F94F78F0039FC80 /* SignUpState.swift */; };
+		5FED18121F94F8110039FC80 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED18111F94F8110039FC80 /* AppReducer.swift */; };
+		5FED18141F94F83F0039FC80 /* SignUpReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED18131F94F83F0039FC80 /* SignUpReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		5FED17E71F94ECFB0039FC80 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		5FED17E81F94ECFB0039FC80 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		5FED180B1F94F54E0039FC80 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5FED180D1F94F6A00039FC80 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		5FED180F1F94F78F0039FC80 /* SignUpState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpState.swift; sourceTree = "<group>"; };
+		5FED18111F94F8110039FC80 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		5FED18131F94F83F0039FC80 /* SignUpReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +175,8 @@
 		5FED17F71F94EF730039FC80 /* State */ = {
 			isa = PBXGroup;
 			children = (
+				5FED180D1F94F6A00039FC80 /* State.swift */,
+				5FED180F1F94F78F0039FC80 /* SignUpState.swift */,
 			);
 			name = State;
 			sourceTree = "<group>";
@@ -174,6 +184,8 @@
 		5FED17F81F94EF780039FC80 /* Reducer */ = {
 			isa = PBXGroup;
 			children = (
+				5FED18111F94F8110039FC80 /* AppReducer.swift */,
+				5FED18131F94F83F0039FC80 /* SignUpReducer.swift */,
 			);
 			name = Reducer;
 			sourceTree = "<group>";
@@ -345,6 +357,10 @@
 			files = (
 				5FED180C1F94F54E0039FC80 /* SignUpViewController.swift in Sources */,
 				5FED17B81F94EBBE0039FC80 /* AppDelegate.swift in Sources */,
+				5FED18141F94F83F0039FC80 /* SignUpReducer.swift in Sources */,
+				5FED180E1F94F6A00039FC80 /* State.swift in Sources */,
+				5FED18101F94F78F0039FC80 /* SignUpState.swift in Sources */,
+				5FED18121F94F8110039FC80 /* AppReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
