@@ -14,6 +14,9 @@
 		5FED17C21F94EBBE0039FC80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FED17C01F94EBBE0039FC80 /* LaunchScreen.storyboard */; };
 		5FED17CD1F94EBBE0039FC80 /* ReduxSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED17CC1F94EBBE0039FC80 /* ReduxSampleTests.swift */; };
 		5FED17D81F94EBBE0039FC80 /* ReduxSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED17D71F94EBBE0039FC80 /* ReduxSampleUITests.swift */; };
+		5FED17E91F94ECFB0039FC80 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FED17E61F94ECFB0039FC80 /* ReSwift.framework */; };
+		5FED17EA1F94ECFB0039FC80 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FED17E71F94ECFB0039FC80 /* RxCocoa.framework */; };
+		5FED17EB1F94ECFB0039FC80 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FED17E81F94ECFB0039FC80 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		5FED17D31F94EBBE0039FC80 /* ReduxSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FED17D71F94EBBE0039FC80 /* ReduxSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxSampleUITests.swift; sourceTree = "<group>"; };
 		5FED17D91F94EBBE0039FC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FED17E61F94ECFB0039FC80 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		5FED17E71F94ECFB0039FC80 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		5FED17E81F94ECFB0039FC80 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FED17E91F94ECFB0039FC80 /* ReSwift.framework in Frameworks */,
+				5FED17EA1F94ECFB0039FC80 /* RxCocoa.framework in Frameworks */,
+				5FED17EB1F94ECFB0039FC80 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,7 @@
 				5FED17CB1F94EBBE0039FC80 /* ReduxSampleTests */,
 				5FED17D61F94EBBE0039FC80 /* ReduxSampleUITests */,
 				5FED17B51F94EBBE0039FC80 /* Products */,
+				5FED17E51F94ECFB0039FC80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +135,16 @@
 			path = ReduxSampleUITests;
 			sourceTree = "<group>";
 		};
+		5FED17E51F94ECFB0039FC80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FED17E61F94ECFB0039FC80 /* ReSwift.framework */,
+				5FED17E71F94ECFB0039FC80 /* RxCocoa.framework */,
+				5FED17E81F94ECFB0039FC80 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +155,7 @@
 				5FED17B01F94EBBE0039FC80 /* Sources */,
 				5FED17B11F94EBBE0039FC80 /* Frameworks */,
 				5FED17B21F94EBBE0039FC80 /* Resources */,
+				5FED17EC1F94ED000039FC80 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -253,6 +274,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FED17EC1F94ED000039FC80 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5FED17B01F94EBBE0039FC80 /* Sources */ = {
@@ -414,6 +458,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReduxSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.homewellgo.ReduxSample;
@@ -426,6 +474,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReduxSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.homewellgo.ReduxSample;
